@@ -1,0 +1,35 @@
+{%
+  set classes = [
+    'instagram-lite-block',
+  ]
+%}
+
+<div{{ attributes.addClass(classes) }}>
+  {% if heading %}
+    <div class="instagram-lite-block--contents__heading">
+      {{ heading }}
+    </div>
+  {% endif %}
+
+  {% if posts %}
+    <div class="instagram-lite-block--contents__items instagram_feed">
+      {% for post in posts %}
+        {% set image = {
+          '#theme':      'image',
+          '#uri':        post.media_url,
+          '#alt':        post.caption,
+          '#attributes': {'class':'insta-image'}
+        } %}
+        <div class="instagram_gallery instagram_new">
+          {{ link(image, post.permalink, { 'class':['insta-link'], 'rel': 'noopener', 'target': '_blank'} ) }}
+        </div>
+      {% endfor %}
+    </div>
+  {% endif %}
+
+  {% if links %}
+    <div class="instagram-lite-block--contents__links">
+      {{ links }}
+    </div>
+  {% endif %}
+</div>

@@ -1,0 +1,24 @@
+<?php
+
+/**
+ * @file
+ * Primary module hooks for Instagram Lite module.
+ */
+
+use Drupal\instagram_lite\Hook\InstagramLiteTheme;
+use Drupal\instagram_lite\Hook\Help;
+use Drupal\Core\Routing\RouteMatchInterface;
+
+/**
+ * Implements hook_theme().
+ */
+function instagram_lite_theme($existing, $type, $theme, $path) {
+  return InstagramLiteTheme::hook($existing, $type, $theme, $path);
+}
+
+/**
+ * Implements hook_help().
+ */
+function instagram_lite_help($route_name, RouteMatchInterface $route_match) {
+  return Help::hook($route_name, $route_match);
+}
