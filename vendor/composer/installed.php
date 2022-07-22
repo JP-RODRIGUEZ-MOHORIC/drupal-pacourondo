@@ -3,7 +3,7 @@
         'name' => 'drupal/legacy-project',
         'pretty_version' => 'dev-main',
         'version' => 'dev-main',
-        'reference' => '76e8fe5893ee536e57d08326d0c67f32d70ee1d3',
+        'reference' => '53b98592488d0f5996cf43592622d62bfeef6688',
         'type' => 'project',
         'install_path' => __DIR__ . '/../../',
         'aliases' => array(),
@@ -793,7 +793,7 @@
         'drupal/legacy-project' => array(
             'pretty_version' => 'dev-main',
             'version' => 'dev-main',
-            'reference' => '76e8fe5893ee536e57d08326d0c67f32d70ee1d3',
+            'reference' => '53b98592488d0f5996cf43592622d62bfeef6688',
             'type' => 'project',
             'install_path' => __DIR__ . '/../../',
             'aliases' => array(),
@@ -1128,6 +1128,24 @@
             'replaced' => array(
                 0 => '9.4.3',
             ),
+        ),
+        'drupal/twitter_block' => array(
+            'pretty_version' => '3.0.0-alpha1',
+            'version' => '3.0.0.0-alpha1',
+            'reference' => '8.x-3.0-alpha1',
+            'type' => 'drupal-module',
+            'install_path' => __DIR__ . '/../../modules/contrib/twitter_block',
+            'aliases' => array(),
+            'dev_requirement' => false,
+        ),
+        'drupal/twitter_embed' => array(
+            'pretty_version' => '1.0.0-alpha2',
+            'version' => '1.0.0.0-alpha2',
+            'reference' => '8.x-1.0-alpha2',
+            'type' => 'drupal-module',
+            'install_path' => __DIR__ . '/../../modules/contrib/twitter_embed',
+            'aliases' => array(),
+            'dev_requirement' => false,
         ),
         'drupal/update' => array(
             'dev_requirement' => false,
