@@ -1837,18 +1837,18 @@
         },
         {
             "name": "drupal/admin_toolbar",
-            "version": "3.1.0",
-            "version_normalized": "3.1.0.0",
+            "version": "3.1.1",
+            "version_normalized": "3.1.1.0",
             "source": {
                 "type": "git",
                 "url": "https://git.drupalcode.org/project/admin_toolbar.git",
-                "reference": "3.1.0"
+                "reference": "3.1.1"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://ftp.drupal.org/files/projects/admin_toolbar-3.1.0.zip",
-                "reference": "3.1.0",
-                "shasum": "7b596d7de04faca747ba3e5216c2e819aae71f40"
+                "url": "https://ftp.drupal.org/files/projects/admin_toolbar-3.1.1.zip",
+                "reference": "3.1.1",
+                "shasum": "a66ce69cd7e56f1cc43797dc2a58d6eab367d353"
             },
             "require": {
                 "drupal/core": "^8.8.0 || ^9.0 || ^10.0"
@@ -1859,8 +1859,8 @@
             "type": "drupal-module",
             "extra": {
                 "drupal": {
-                    "version": "3.1.0",
-                    "datestamp": "1643742891",
+                    "version": "3.1.1",
+                    "datestamp": "1658802262",
                     "security-coverage": {
                         "status": "covered",
                         "message": "Covered by Drupal's security advisory policy"
@@ -1895,12 +1895,12 @@
                     "role": "Maintainer"
                 },
                 {
-                    "name": "fethi.krout",
-                    "homepage": "https://www.drupal.org/user/3206765"
-                },
-                {
                     "name": "matio89",
                     "homepage": "https://www.drupal.org/user/2320090"
+                },
+                {
+                    "name": "Musa.thomas",
+                    "homepage": "https://www.drupal.org/user/1213824"
                 },
                 {
                     "name": "romainj",
@@ -1921,27 +1921,27 @@
         },
         {
             "name": "drupal/asset_injector",
-            "version": "2.10.0",
-            "version_normalized": "2.10.0.0",
+            "version": "2.11.0",
+            "version_normalized": "2.11.0.0",
             "source": {
                 "type": "git",
                 "url": "https://git.drupalcode.org/project/asset_injector.git",
-                "reference": "8.x-2.10"
+                "reference": "8.x-2.11"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://ftp.drupal.org/files/projects/asset_injector-8.x-2.10.zip",
-                "reference": "8.x-2.10",
-                "shasum": "c7912ce49cdfbb517bfecc6301d417f0c9ab9833"
+                "url": "https://ftp.drupal.org/files/projects/asset_injector-8.x-2.11.zip",
+                "reference": "8.x-2.11",
+                "shasum": "d9969bd77f6e16ba72e75e81ac2d6f7e9926ebaf"
             },
             "require": {
-                "drupal/core": "^8.8 || ^9.0 || ^10.0"
+                "drupal/core": "^9.3 || ^10.0"
             },
             "type": "drupal-module",
             "extra": {
                 "drupal": {
-                    "version": "8.x-2.10",
-                    "datestamp": "1647880963",
+                    "version": "8.x-2.11",
+                    "datestamp": "1658767027",
                     "security-coverage": {
                         "status": "covered",
                         "message": "Covered by Drupal's security advisory policy"
@@ -3367,6 +3367,64 @@
             "install-path": "../../modules/contrib/pathauto"
         },
         {
+            "name": "drupal/phpmailer_smtp",
+            "version": "2.1.0",
+            "version_normalized": "2.1.0.0",
+            "source": {
+                "type": "git",
+                "url": "https://git.drupalcode.org/project/phpmailer_smtp.git",
+                "reference": "2.1.0"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://ftp.drupal.org/files/projects/phpmailer_smtp-2.1.0.zip",
+                "reference": "2.1.0",
+                "shasum": "f031fb8921e0558cc96b29171f14a3fbb9cf1c69"
+            },
+            "require": {
+                "drupal/core": "^8.8 || ^9 || ^10",
+                "phpmailer/phpmailer": "^6.6.0"
+            },
+            "type": "drupal-module",
+            "extra": {
+                "drupal": {
+                    "version": "2.1.0",
+                    "datestamp": "1655334286",
+                    "security-coverage": {
+                        "status": "covered",
+                        "message": "Covered by Drupal's security advisory policy"
+                    }
+                }
+            },
+            "installation-source": "dist",
+            "notification-url": "https://packages.drupal.org/8/downloads",
+            "license": [
+                "GPL-2.0+"
+            ],
+            "authors": [
+                {
+                    "name": "Ian McLean (imclean)",
+                    "homepage": "http://drupal.org/u/imclean"
+                }
+            ],
+            "description": "Uses the PHPMailer library to send emails via SMTP.",
+            "homepage": "https://drupal.org/project/phpmailer_smtp",
+            "keywords": [
+                "drupal",
+                "email",
+                "mail",
+                "mail system",
+                "mailsystem",
+                "phpmailer",
+                "smtp"
+            ],
+            "support": {
+                "source": "https://git.drupalcode.org/project/phpmailer_smtp",
+                "issues": "https://www.drupal.org/project/issues/phpmailer_smtp"
+            },
+            "install-path": "../../modules/contrib/phpmailer_smtp"
+        },
+        {
             "name": "drupal/showcase_lite",
             "version": "1.3.0",
             "version_normalized": "1.3.0.0",
@@ -3867,6 +3925,120 @@
                 "irc": "irc://irc.freenode.org/drupal-contribute"
             },
             "install-path": "../../modules/contrib/views_slideshow"
+        },
+        {
+            "name": "drupal/webform",
+            "version": "6.2.0-beta2",
+            "version_normalized": "6.2.0.0-beta2",
+            "source": {
+                "type": "git",
+                "url": "https://git.drupalcode.org/project/webform.git",
+                "reference": "6.2.0-beta2"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://ftp.drupal.org/files/projects/webform-6.2.0-beta2.zip",
+                "reference": "6.2.0-beta2",
+                "shasum": "d934e0e240bda58bcf1fc196207606af14199148"
+            },
+            "require": {
+                "drupal/core": "^8.8 || ^9"
+            },
+            "require-dev": {
+                "drupal/address": "~1.0",
+                "drupal/bootstrap": "~3.0",
+                "drupal/captcha": "~1.0",
+                "drupal/chosen": "~3.0",
+                "drupal/clientside_validation": "~3.0",
+                "drupal/clientside_validation_jquery": "*",
+                "drupal/devel": "~3.0",
+                "drupal/entity": "~1.0",
+                "drupal/entity_print": "~2.0",
+                "drupal/gnode": "*",
+                "drupal/group": "1.0",
+                "drupal/jquery_ui": "~1.0",
+                "drupal/jquery_ui_checkboxradio": "~1.0",
+                "drupal/jquery_ui_datepicker": "~1.0",
+                "drupal/lingotek": "~3.0",
+                "drupal/mailsystem": "~4.0",
+                "drupal/paragraphs": "~1.0",
+                "drupal/select2": "~1.0",
+                "drupal/smtp": "~1.0",
+                "drupal/styleguide": "~1.0",
+                "drupal/telephone_validation": "~2.0",
+                "drupal/token": "~1.0",
+                "drupal/variationcache": "~1.0",
+                "drupal/webform_access": "*",
+                "drupal/webform_attachment": "*",
+                "drupal/webform_clientside_validation": "*",
+                "drupal/webform_devel": "*",
+                "drupal/webform_entity_print": "*",
+                "drupal/webform_group": "*",
+                "drupal/webform_node": "*",
+                "drupal/webform_options_limit": "*",
+                "drupal/webform_scheduled_email": "*",
+                "drupal/webform_share": "*",
+                "drupal/webform_ui": "*"
+            },
+            "suggest": {
+                "drupal/jquery_ui_checkboxradio": "Provides jQuery UI Checkboxradio library. Required by the Webform jQueryUI Buttons module. The Webform jQueryUI Buttons module is deprecated because jQueryUI is no longer maintained.",
+                "drupal/jquery_ui_datepicker": "Provides jQuery UI Datepicker library. Required to support datepickers. The Webform jQueryUI Datepicker module is deprecated because jQueryUI is no longer maintained."
+            },
+            "type": "drupal-module",
+            "extra": {
+                "drupal": {
+                    "version": "6.2.0-beta2",
+                    "datestamp": "1644940970",
+                    "security-coverage": {
+                        "status": "not-covered",
+                        "message": "Beta releases are not covered by Drupal security advisories."
+                    }
+                },
+                "drush": {
+                    "services": {
+                        "drush.services.yml": "^9 || ^10"
+                    }
+                }
+            },
+            "installation-source": "dist",
+            "notification-url": "https://packages.drupal.org/8/downloads",
+            "license": [
+                "GPL-2.0-or-later"
+            ],
+            "authors": [
+                {
+                    "name": "Jacob Rockowitz (jrockowitz)",
+                    "homepage": "https://www.drupal.org/u/jrockowitz",
+                    "role": "Maintainer"
+                },
+                {
+                    "name": "Alexander Trotsenko (bucefal91)",
+                    "homepage": "https://www.drupal.org/u/bucefal91",
+                    "role": "Co-maintainer"
+                },
+                {
+                    "name": "Contributors",
+                    "homepage": "https://www.drupal.org/node/7404/committers",
+                    "role": "Contributor"
+                },
+                {
+                    "name": "quicksketch",
+                    "homepage": "https://www.drupal.org/user/35821"
+                },
+                {
+                    "name": "torotil",
+                    "homepage": "https://www.drupal.org/user/865256"
+                }
+            ],
+            "description": "Enables the creation of webforms and questionnaires.",
+            "homepage": "https://drupal.org/project/webform",
+            "support": {
+                "source": "https://git.drupalcode.org/project/webform",
+                "issues": "https://www.drupal.org/project/issues/webform?version=8.x",
+                "docs": "https://www.drupal.org/docs/8/modules/webform",
+                "forum": "https://drupal.stackexchange.com/questions/tagged/webform"
+            },
+            "install-path": "../../modules/contrib/webform"
         },
         {
             "name": "drupal/youtube",
@@ -5528,6 +5700,87 @@
                 "source": "https://github.com/pear/PEAR_Exception"
             },
             "install-path": "../pear/pear_exception"
+        },
+        {
+            "name": "phpmailer/phpmailer",
+            "version": "v6.6.3",
+            "version_normalized": "6.6.3.0",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/PHPMailer/PHPMailer.git",
+                "reference": "9400f305a898f194caff5521f64e5dfa926626f3"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/PHPMailer/PHPMailer/zipball/9400f305a898f194caff5521f64e5dfa926626f3",
+                "reference": "9400f305a898f194caff5521f64e5dfa926626f3",
+                "shasum": ""
+            },
+            "require": {
+                "ext-ctype": "*",
+                "ext-filter": "*",
+                "ext-hash": "*",
+                "php": ">=5.5.0"
+            },
+            "require-dev": {
+                "dealerdirect/phpcodesniffer-composer-installer": "^0.7.0",
+                "doctrine/annotations": "^1.2",
+                "php-parallel-lint/php-console-highlighter": "^1.0.0",
+                "php-parallel-lint/php-parallel-lint": "^1.3.2",
+                "phpcompatibility/php-compatibility": "^9.3.5",
+                "roave/security-advisories": "dev-latest",
+                "squizlabs/php_codesniffer": "^3.6.2",
+                "yoast/phpunit-polyfills": "^1.0.0"
+            },
+            "suggest": {
+                "ext-mbstring": "Needed to send email in multibyte encoding charset or decode encoded addresses",
+                "hayageek/oauth2-yahoo": "Needed for Yahoo XOAUTH2 authentication",
+                "league/oauth2-google": "Needed for Google XOAUTH2 authentication",
+                "psr/log": "For optional PSR-3 debug logging",
+                "stevenmaguire/oauth2-microsoft": "Needed for Microsoft XOAUTH2 authentication",
+                "symfony/polyfill-mbstring": "To support UTF-8 if the Mbstring PHP extension is not enabled (^1.2)"
+            },
+            "time": "2022-06-20T09:21:02+00:00",
+            "type": "library",
+            "installation-source": "dist",
+            "autoload": {
+                "psr-4": {
+                    "PHPMailer\\PHPMailer\\": "src/"
+                }
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "LGPL-2.1-only"
+            ],
+            "authors": [
+                {
+                    "name": "Marcus Bointon",
+                    "email": "phpmailer@synchromedia.co.uk"
+                },
+                {
+                    "name": "Jim Jagielski",
+                    "email": "jimjag@gmail.com"
+                },
+                {
+                    "name": "Andy Prevost",
+                    "email": "codeworxtech@users.sourceforge.net"
+                },
+                {
+                    "name": "Brent R. Matzelle"
+                }
+            ],
+            "description": "PHPMailer is a full-featured email creation and transfer class for PHP",
+            "support": {
+                "issues": "https://github.com/PHPMailer/PHPMailer/issues",
+                "source": "https://github.com/PHPMailer/PHPMailer/tree/v6.6.3"
+            },
+            "funding": [
+                {
+                    "url": "https://github.com/Synchro",
+                    "type": "github"
+                }
+            ],
+            "install-path": "../phpmailer/phpmailer"
         },
         {
             "name": "psr/cache",
