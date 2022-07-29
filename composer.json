@@ -64,6 +64,7 @@
         "drupal/core-recommended": "^9.4",
         "drupal/core-vendor-hardening": "^9.4",
         "drupal/corporate_lite": "^1.2",
+        "drupal/ctools": "^4.0",
         "drupal/devel": "^4.1",
         "drupal/eva": "^2.1",
         "drupal/flexslider": "^2.0",
