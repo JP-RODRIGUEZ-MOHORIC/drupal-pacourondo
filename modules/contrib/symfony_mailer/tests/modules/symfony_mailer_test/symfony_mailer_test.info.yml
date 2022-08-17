@@ -6,7 +6,7 @@ core_version_requirement: ^9.1
 dependencies:
   - symfony_mailer:symfony_mailer
 
-# Information added by Drupal.org packaging script on 2022-06-18
-version: '1.0.0-alpha10'
+# Information added by Drupal.org packaging script on 2022-08-15
+version: '1.0.0-alpha11'
 project: 'symfony_mailer'
-datestamp: 1655569042
+datestamp: 1660561292

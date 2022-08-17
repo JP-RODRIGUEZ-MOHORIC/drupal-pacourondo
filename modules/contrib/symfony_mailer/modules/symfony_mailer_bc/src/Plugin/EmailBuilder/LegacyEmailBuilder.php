@@ -38,6 +38,8 @@ class LegacyEmailBuilder extends EmailBuilderBase implements ContainerFactoryPlu
   ];
 
   /**
+   * Constructor.
+   *
    * @param array $configuration
    *   A configuration array containing information about the plugin instance.
    * @param string $plugin_id
@@ -68,7 +70,7 @@ class LegacyEmailBuilder extends EmailBuilderBase implements ContainerFactoryPlu
    * {@inheritdoc}
    */
   public function fromArray(EmailFactoryInterface $factory, array $message) {
-    return $factory->newModuleEmail($message['module'], $message['key'], $message);
+    return $factory->newTypedEmail($message['module'], $message['key'], $message);
   }
 
   /**
@@ -123,6 +125,12 @@ class LegacyEmailBuilder extends EmailBuilderBase implements ContainerFactoryPlu
    */
   protected function emailFromArray(EmailInterface $email, array $message) {
     $email->setSubject($message['subject']);
+
+    // Add attachments.
+    $attachments = $message['params']['attachments'] ?? [];
+    foreach ($attachments as $attachment) {
+      $email->attachFromPath($attachment['filepath'], $attachment['filename'] ?? NULL, $attachment['filemime'] ?? NULL);
+    }
 
     // Add Address headers from message array to Email object.
     // The "To" header will be set via build().

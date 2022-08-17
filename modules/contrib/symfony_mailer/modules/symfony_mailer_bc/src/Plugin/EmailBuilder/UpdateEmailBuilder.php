@@ -18,6 +18,7 @@ use Drupal\update\UpdateManagerInterface;
  * @EmailBuilder(
  *   id = "update",
  *   sub_types = { "status_notify" = @Translation("Available updates") },
+ *   proxy = TRUE,
  *   common_adjusters = {"email_subject", "email_body", "email_to"},
  *   import = @Translation("Update notification addresses"),
  * )
@@ -30,7 +31,7 @@ class UpdateEmailBuilder extends EmailBuilderBase {
    * {@inheritdoc}
    */
   public function fromArray(EmailFactoryInterface $factory, array $message) {
-    return $factory->newModuleEmail($message['module'], $message['key']);
+    return $factory->newTypedEmail($message['module'], $message['key']);
   }
 
   /**
@@ -83,7 +84,9 @@ class UpdateEmailBuilder extends EmailBuilderBase {
    * {@inheritdoc}
    */
   public function import() {
-    $mail_notification = implode(',', $this->helper()->config()->get('update.settings')->get('notification.emails'));
+    // Get without overrides to avoid the dummy value
+    // set by MailerBcConfigOverride.
+    $mail_notification = implode(',', $this->helper()->config()->get('update.settings')->getOriginal('notification.emails', FALSE));
 
     if ($mail_notification) {
       $notification_policy = $this->helper()->policyFromAddresses($this->helper()->parseAddress($mail_notification));

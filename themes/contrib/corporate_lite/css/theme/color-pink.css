@@ -347,7 +347,7 @@ ul.menu li a:hover {
 }
 .region--dark-typography .subfooter__section ul.menu li a:hover {
   border-bottom-color: #db70a0;
-  color: #db70a0;
+  color: white;
 }
 
 /* components: node links */
